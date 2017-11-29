@@ -11,7 +11,7 @@ def home_page(request):
         "title": "Hello World!",
         "content": "Welcome to Homepage",
     }
-    return render(request, 'home_page.html', context)
+    return render(request, 'ecommerce/home_page.html', context)
 
 
 def contact_page(request):
@@ -23,7 +23,7 @@ def contact_page(request):
     }
     if request.method == "POST":
         print(request.POST)
-    return render(request, 'contact_page.html', context)
+    return render(request, 'ecommerce/contact_page.html', context)
 
 
 def about_page(request):
@@ -31,4 +31,4 @@ def about_page(request):
         "title": "About Page",
         "content": "Welcome to The about page",
     }
-    return render(request, 'home_page.html', context)
+    return render(request, 'ecommerce/home_page.html', context)
